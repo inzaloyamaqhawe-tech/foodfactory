@@ -107,14 +107,6 @@
           </ul>
         </article>
       </section>
-
-      <section class="map-wrap panel">
-        <div class="map-head">
-          <h3>Find Food Factory Silverlakes</h3>
-          <p>Live Google Map location for instant navigation.</p>
-        </div>
-        <iframe title="Food Factory Silverlakes map" src="https://www.google.com/maps?q=Food+Factory+Silverlakes+Pretoria+East&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
     </main>
 
     <div id="menu-modal-backdrop" class="menu-modal-backdrop" role="presentation">
@@ -124,7 +116,10 @@
             <p class="section-kicker">Full Menu</p>
             <h3>Food Factory Silverlakes</h3>
           </div>
-          <button id="menu-close" class="menu-close" type="button">Close</button>
+          <div class="menu-head-actions">
+            <button id="cart-indicator" class="cart-indicator" type="button">Cart (0)</button>
+            <button id="menu-close" class="menu-close" type="button">Close</button>
+          </div>
         </div>
         <div class="menu-toolbar">
           <div id="menu-tabs" class="menu-tabs" role="tablist" aria-label="Menu categories"></div>
@@ -133,13 +128,24 @@
             <input id="menu-search" type="text" placeholder="Type item name..." />
           </label>
         </div>
-        <div id="menu-modal-grid" class="menu-modal-grid"></div>
+        <div class="menu-modal-layout">
+          <div id="menu-modal-grid" class="menu-modal-grid"></div>
+          <aside class="cart-panel" aria-label="Order cart">
+            <h4>Your Cart</h4>
+            <ul id="cart-list" class="cart-list"></ul>
+            <div class="cart-total-row">
+              <span>Total</span>
+              <strong id="cart-total">R0.00</strong>
+            </div>
+            <button id="proceed-order" class="btn btn-hot" type="button">Proceed Order</button>
+          </aside>
+        </div>
       </section>
     </div>
 
     <footer>
       <p>Food Factory Silverlakes, Pretoria East</p>
-      <p>Image sources: real photography and Google Maps embed</p>
+      <p class="powered-by">Powered By: <a href="https://wa.me/27784106366?text=Hi%20Inzalo%20Yamaqhawe%20Technologies%2C%20I%20need%20a%20website%20for%20my%20business." target="_blank" rel="noreferrer">Inzalo Yamaqhawe Technologies</a></p>
     </footer>
   </div>
 
