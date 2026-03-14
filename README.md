@@ -18,10 +18,10 @@ npm run preview
 
 ## GitHub Pages Deployment
 
-This project is configured with Vite base path:
+This project is configured with a relative Vite base path:
 
-- `/foodfactory/`
+- `./`
 
-That matches the GitHub repository name and prevents blank/white screens from broken asset URLs.
+This is resilient for GitHub Pages and avoids blank/white screens caused by broken asset URLs.
 
 After pushing to `main`, the included GitHub Actions workflow deploys `dist` to GitHub Pages automatically.
