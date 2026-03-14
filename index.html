@@ -1,22 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Factory Silverlakes | Pretoria East</title>
-    <meta
-      name="description"
-      content="Food Factory Silverlakes in Pretoria East. Contact, directions, and premium dining experience."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Archivo+Black&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Factory Silverlakes | Pretoria East</title>
+  <meta name="description" content="Food Factory Silverlakes in Pretoria East. Menu, contact, location and gallery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Archivo+Black&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./site.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="top-nav">
+      <div>
+        <p class="label">Pretoria East</p>
+        <h1>Food Factory Silverlakes</h1>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-soft" href="tel:+27719358686">Call</a>
+        <a class="btn btn-hot" href="#visit">Directions</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <article class="hero-copy panel">
+          <p class="section-kicker">Restaurant Experience</p>
+          <h2>5-Star Atmosphere for Food, Friends, and Unforgettable Nights</h2>
+          <p class="lead">Food Factory Silverlakes brings bold flavor, polished presentation, and a lively social energy to Pretoria East.</p>
+          <div class="chips">
+            <span>Rating 4.4</span>
+            <span>R200-300</span>
+            <span>Open, closes 22:00</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-hot" href="tel:+27719358686">Order Collection</a>
+            <a class="btn btn-soft" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Food+Factory+Silverlakes+Pretoria+East">Open on Maps</a>
+          </div>
+        </article>
+        <aside class="hero-image panel">
+          <img src="https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Restaurant setup" loading="eager" />
+        </aside>
+      </section>
+
+      <section class="panel google-sync">
+        <div>
+          <p class="section-kicker">Official Google Listing</p>
+          <h3>Real Menu and Real Photos from Google</h3>
+          <p>Use the official links below while final media is being curated.</p>
+        </div>
+        <div class="action-links">
+          <a class="btn btn-hot" target="_blank" rel="noreferrer" href="https://www.google.com/search?q=Food+Factory+Silverlakes+menu+Pretoria+East">Open Menu on Google</a>
+          <a class="btn btn-soft" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Food+Factory+Silverlakes+Pretoria+East">Open Photos on Google Maps</a>
+        </div>
+        <p class="sync-state">Deployment-safe mode active: website runs directly from static files.</p>
+      </section>
+
+      <section class="gallery-grid" aria-label="Restaurant photo gallery">
+        <figure class="gallery-card"><img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Interior" /></figure>
+        <figure class="gallery-card"><img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dining setup" /></figure>
+        <figure class="gallery-card"><img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Meal" /></figure>
+        <figure class="gallery-card"><img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cocktails" /></figure>
+        <figure class="gallery-card"><img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Lounge" /></figure>
+        <figure class="gallery-card"><img src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pizza" /></figure>
+      </section>
+
+      <section class="menu-zone" id="menu">
+        <div class="menu-head panel">
+          <p class="section-kicker">Menu Board</p>
+          <h3>Food Factory Silverlakes Menu Highlights</h3>
+          <p>Top 5 picks are shown below. Tap see more to open the full menu popup.</p>
+        </div>
+        <div class="menu-preview panel">
+          <ul id="preview-list"></ul>
+          <button id="see-more" class="see-more-link" type="button">see more</button>
+        </div>
+        <div class="specials-grid">
+          <article class="special-card panel"><h4>5 Days of Crazy Specials</h4><p>Jack Black Draught and Strongbow draw giveaway, with seafood and pork rib specials.</p></article>
+          <article class="special-card panel"><h4>Braai Wednesdays, Saturdays and Sundays</h4><p>Boerewors, pork chops, beef espetada and half Mozambican chicken specials.</p></article>
+        </div>
+      </section>
+
+      <section class="info-layout" id="visit">
+        <article class="panel card">
+          <h3>Address</h3>
+          <p>PTA East, Cnr N4 Highway and Solomon Mahlangu Dr, Pretoria East, Silver Lakes Golf Estate, 0054</p>
+          <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Food+Factory+Silverlakes+Pretoria+East">Get GPS Directions</a>
+        </article>
+        <article class="panel card">
+          <h3>Contact</h3>
+          <p>Phone: 071 935 8686</p>
+          <p>Service: Collection and delivery options available</p>
+          <div class="mini-buttons">
+            <a class="btn btn-soft" href="tel:+27719358686">Call Now</a>
+            <a class="btn btn-soft" href="https://wa.me/27719358686" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </article>
+        <article class="panel card card-highlight">
+          <h3>Why Guests Return</h3>
+          <ul>
+            <li>All-you-can-eat options</li>
+            <li>Outdoor seating</li>
+            <li>Great cocktails</li>
+            <li>Fast service in a vibrant atmosphere</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="map-wrap panel">
+        <div class="map-head">
+          <h3>Find Food Factory Silverlakes</h3>
+          <p>Live Google Map location for instant navigation.</p>
+        </div>
+        <iframe title="Food Factory Silverlakes map" src="https://www.google.com/maps?q=Food+Factory+Silverlakes+Pretoria+East&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
+
+    <div id="menu-modal-backdrop" class="menu-modal-backdrop" role="presentation">
+      <section class="menu-modal panel" role="dialog" aria-modal="true" aria-label="Full menu">
+        <div class="menu-modal-head">
+          <div>
+            <p class="section-kicker">Full Menu</p>
+            <h3>Food Factory Silverlakes</h3>
+          </div>
+          <button id="menu-close" class="menu-close" type="button">Close</button>
+        </div>
+        <div class="menu-toolbar">
+          <div id="menu-tabs" class="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+          <label class="menu-search-wrap" for="menu-search">
+            <span>Search menu</span>
+            <input id="menu-search" type="text" placeholder="Type item name..." />
+          </label>
+        </div>
+        <div id="menu-modal-grid" class="menu-modal-grid"></div>
+      </section>
+    </div>
+
+    <footer>
+      <p>Food Factory Silverlakes, Pretoria East</p>
+      <p>Image sources: real photography and Google Maps embed</p>
+    </footer>
+  </div>
+
+  <script src="./site.js"></script>
+</body>
 </html>
